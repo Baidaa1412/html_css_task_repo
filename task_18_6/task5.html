@@ -4,42 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style> label { display: inline-block;}
-    input [type ="text"]{width 200px}</style>
-</head>
+    <style>
+        label {
+            display: inline-block ;
+            width: 100px;
+        }
+
+        input[type="text"] {
+            width: 200px;
+        }
+        input[type="text"].short {
+            width: 100px;
+        }
+
+    </style>
+    </head>
+
 <body>
     <form>
-        <label for="name"> Name:</label>
-        <input type="text" name= "name"><br>
-      <label for="name">Adress:</label>
-        <input type="text"  name="name"><br>
-        <label for="message">city:</label>
-        <input type="text"  name="name"><br>
-        <label for="name">state</label>
-            <input type="text"  name="name"><br>
-            <label for="message">Zip:</label>
-            <input type="text"  name="name"><br>
-        <p>
-subscription?
+        <label for="name">Name:</label>
+        <input type="text" name="name" ><br>
+
+        <label for="address">Address:</label>
+        <input type="text" name="address"><br>
+
+        <label for="city">City:</label>
+        <input type="text" name="city"><br>
+
+        <label for="state">State:</label>
+        <input type="text" name="state" class="short" ><br>
+
+        <label for="zip">Zip:</label>
+        <input type="text" name="zip" class="short"><br>
+        Magazine:
+        <select name="magazine " style="margin-left: 32.5px; width: 108px;" >
+            <option value="newsweek"  >Newsweek</option>
+            <option value="magazine" >Magazine</option>
+        </select><br>
+
+  subscribtion
         <input type="radio">
-    <label for="radio">1 year </label>
+    <label for="radio">1 year</label>
 
     <input type="radio">
-    <label for="radio ">2 year </label>
-</p>
-    <p>Magazine ?
+    <label for="radio no">2years</label><br>
 
-
-   <select>
-    <option value="newsweek">newsweek</option>
-      <option value="magasine">Magazine </option>
-
-     </p>
-
-    </select><br>
-
-   <p> <input type="send your Order" value= "send your Order">
-</p></p>
-      </form>
+        <input type="submit" value="Send your Order">
+    </form>
 </body>
 </html>
