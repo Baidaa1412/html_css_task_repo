@@ -1,0 +1,38 @@
+
+*{margin-left: 5%;
+margin-right: 5%;}
+
+.continer{
+background-color: rgb(215, 223, 223);
+width:75%;
+text-align: center;
+align-items: center;
+margin-left: 12.5%;
+height:200px;}
+.button1{
+    background-color: rgb(43, 137, 219);
+    width: 60%;
+    height: 50px;
+border-color: rgb(43, 137, 219);
+color: aliceblue;}
+
+.start{display: flex;
+    .flex-item {
+        flex: 1 0 80%; /* التمدد: 1، التقلص: 0، التوزيع: 20% */
+      }}
+
+img{width:90%;}
+
+.mid{display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+text-align: justify;
+justify-content: center;}
+.button2{
+    background-color: rgb(169, 208, 174);
+    width:80%;
+    height: 50px;
+    margin-top: 30px;
+     border-color: rgb(156, 194, 160);
+margin-left:10%;
+color: aliceblue;}
+

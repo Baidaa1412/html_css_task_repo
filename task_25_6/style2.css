@@ -1,0 +1,32 @@
+*{margin-left: 5%;
+margin-right:5%;}
+
+.continer{text-align: center;}
+.pone{font-size: x-large;}
+.ptwo{font-size: large;}
+.section1{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 200px;
+    text-align: center;
+    margin:0;
+}
+ .pic { border: solid black 1px;}
+ h2{border: solid rgb(232, 224, 224) 1px;
+    background-color:rgb(255, 252, 252) ;
+margin: auto;}
+
+.big{
+    font-size: larger;
+}
+.button2{
+    color: aliceblue;
+    background-color: rgb(51, 117, 209);
+    border-color:  rgb(51, 117, 209);
+}
+
+.button1{
+    color: rgb(51, 117, 209);
+    border-color:  rgb(51, 117, 209);
+}
