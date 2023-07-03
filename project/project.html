@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="css\cdn.jsdelivr.net_npm_bootstrap@5.0.2_dist_css_bootstrap.min.css" rel="stylesheet" >
+    <style>
+    .navbar {
+      background-color: #333;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      padding: 0 10px;
+      color: #fff;
+      font-weight: bold;
+     
+      display: grid;
+      grid-template-columns:  12.5% 12.5% 45% 5% 5% 5% 5% 5%;
+      grid-gap: 10px;
+      width:100% ;     
+   
+    }
+
+    .navbar-logo {
+      margin-right: auto;
+      margin-left: 10px;
+      font-size: x-large;
+      font-family: 'Cairo', sans-serif;
+    }
+
+     i {
+      font-size: 20px;
+        color: #fff;
+        justify-content:center;
+          width: 99%;
+        height: 99%;
+         font-size: x-large;}
+
+         li{list-style: none;
+        text-align: center;}
+      
+      
+        .navbar2{margin-left: 10%;
+            margin-right: 5%;
+        background-color: #4c4c4c;
+            height: 100px;
+          border: #4c4c4c solid 1px;
+          width:75%;
+            display: grid;
+      grid-template-columns:  25% 9% 10%  10% 10% 5% 10% 10% 15%;
+      grid-gap: 10px;
+      overflow: hidden; 
+      margin-top: 50px;
+     }
+
+      .microphone-icon {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      color: red;
+      position: relative;
+      margin-right: 5px;
+
+    }
+   .barbig{font-size: x-large;}
+   .tickt-button {
+    display: inline-block;
+      padding: 10px 20px;
+      background: linear-gradient(45deg, #FF6B6B, #FFA931);
+      border: none;
+      border-radius: 25px;
+      color: #fff;
+      font-weight: bold;
+      text-align: center;
+      text-decoration: none;
+      width: 120px;
+      height: 60px;
+    }
+
+    .submit-button:hover {
+      background-color: #FF4F4F;
+    }
+   .mainpic{width:100%;}
+
+    .timer-container {
+      background:linear-gradient(45deg, #FF6B6B, #FFA931);
+      padding: 20px;
+      text-align: center;
+      border: #333 1px;
+      height: 80px;
+    }
+
+    .timer {
+      font-size: 36px;
+      color: #fff;
+      margin-left: 50%;
+    }
+
+    .timer-text {
+      font-size: 18px;
+      color:white;
+      margin-top: -60px;
+      margin-right: 509px;
+     
+    }
+    .pic{display:grid;
+      grid-template-columns:45% 25%;
+
+      padding-top: 80px;
+
+      margin-left: 20%;
+       
+    }
+
+
+       .text1{direction: ltr;}
+       .listmain{text-align: left;}
+
+       .checkmark{color: red;}
+  
+       .image-container {
+  position: relative;
+  display: inline-block;
+  
+
+}
+
+.maincon{display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;}
+
+.image-container img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.image-container .image-name {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(245, 239, 239, 0.8);
+  color: rgb(0, 0, 0);
+  padding: 5px 10px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.image-container:hover .image-name {
+  opacity: 1;
+}
+.d-flex .p-2 {justify-content: center;
+border: #333 1px solid;
+width: 200px;
+text-align: center;
+
+
+ }
+ .p-2:hover{background:linear-gradient(45deg, #FF6B6B, #FFA931);
+ color: white;}
+
+ .card-grou {display: grid;
+ grid-template-columns: 1fr;
+ width: 70%;
+margin-left: 15%;}
+
+ .card-img-top{border-radius: 75%;
+ width:15%;
+}
+ .card{display: flex;
+ flex-direction: row;
+ margin: 2%;
+ padding: 2%;
+column-gap: 20%;
+row-gap: 10%;}
+ .card-body{display: grid;
+ grid-template-columns: 2fr 1fr;
+ gap:20%}
+
+ .user{display:flex;
+ margin-top: -65px;}
+ .price-item h4 {
+    color: #171822;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 26px;
+}
+
+ .pricing-section {
+    padding-top: 90px;
+    padding-bottom: 80px;
+}
+h4  {
+    font-size: 24px;
+    text-align: center;
+}
+.pi-price h2{text-align: center;
+background:linear-gradient(45deg, #FF6B6B, #FFA931);
+color:white;
+height: 80px;}
+.set-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+.price-item{border: #4c4c4c solid 1px;
+    background: #ffffff;
+    text-align: center;
+    padding-top: 34px;
+    padding-bottom: 18px;
+    position: relative;
+    border-radius: 2px;
+    margin-bottom: 40px;
+    background-color:white;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+user agent stylesheet
+div {
+    display: block;
+}
+.price-item .pi-price {
+    padding-top: 16px;
+    padding-bottom: 14px;
+    margin-bottom: 38px;
+}
+.price-item .price-btn {
+    font-size: 16px;
+    color: #171822;
+    font-weight: 600;
+    display: inline-block;
+    background: #ffffff;
+    padding: 10px 85px;
+    border-radius: 50px;
+    -webkit-box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+    position: relative;
+    bottom: -39px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.col-lg-4 {
+  padding: 50px;}
+.pricing-header{
+  background-image: url(./2023-06-26\ \(2\).png);
+ 
+}
+h2{text-align: center;}
+
+.wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns:1fr 1fr ;
+    background-color: #fff;
+    color: #444;
+   margin-left: 20%;
+   width: 60%;
+  }
+  .card-title1{ background:linear-gradient(45deg, #FF6B6B, #FFA931);
+    width:100px;
+    
+}
+.set-bg {
+  background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    display:flex ;
+    gap: 50%;
+    background-image: linear-gradient(to left , #FF6B6b ,rgba(255, 162, 0, 0.963)), url('./2023-06-26\ 1.png');
+    background-blend-mode: overlay;
+    background-blend-mode: overlay;
+    z-index: 1;
+
+}
+#map {
+  width: 100%;
+  height: 400px;
+  /* أي تخصيصات أخرى ترغب في تطبيقها */
+}
+
+</style>
+</head>
+<body>
+  <div class="navbar">
+    
+    <span class="navbar-logo">
+       colorlib<b style="color: green;">.</b> </span>
+    <span class="NAV2"> +  MANUP </span>
+    <p></p>
+   <li> <i class="fas fa-laptop navbar-icons"></i></li> 
+   <li> <i class="fas fa-tablet-alt navbar-icons"></i></li>
+    <li><i class="fas fa-mobile-alt navbar-icons"></i></li>
+   <li style="background-color: green;"> <i class="fas fa-shopping-cart navbar-icons "></i></li>
+   <li> <i class="fas fa-times navbar-icons error-icon"></i></li>
+   
+    
+  </div>
+  <div class="navbar2">
+    
+    <span class="bar" style="display: inline;">
+        <i class="fas fa-microphone microphone-icon"></i><span class="barbig"> MANUP</span></span>
+    
+    <span class="bar">HOME </span>
+    <span class="bar"> ABOUT </span>
+    <span class="bar">SPEAKERS</span>
+    <span class="bar">SCHEDULE</b> </span>
+    <span class="bar"> BLOG </span>
+    <span class="bar"> CONTACTS</span>
+    <span ><button type="submit" class="tickt-button">Tickt</button> </span>
+   
+    
+  </div>
+
+  <img  class="mainpic" src="./2023-06-26 (2).png" alt="main picture">
+
+  <body>
+  
+    <div class="timer-container">
+      <div class="timer">00:00:00</div>
+      <div class="timer-text">Conference Date<br>
+        <h2> Count Every Second<br>
+        Until the Event</h2></div>
+    </div>
+
+    <script>
+      function updateTimer() {
+        var timerElement = document.querySelector('.timer');
+        var currentTime = new Date();
+        var startDate = new Date('2023-07-25'); // تاريخ البداية المطلوب
+    
+        var timeDiff = Math.abs(currentTime.getTime() - startDate.getTime());
+        var days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+        var hours = currentTime.getHours();
+        var minutes = currentTime.getMinutes();
+        var seconds = currentTime.getSeconds();
+    
+        // إضافة صفر إلى الأرقام إذا كانت أقل من 10
+        days = (days < 10 ? '0' : '') + days;
+        hours = (hours < 10 ? '0' : '') + hours;
+        minutes = (minutes < 10 ? '0' : '') + minutes;
+        seconds = (seconds < 10 ? '0' : '') + seconds;
+    
+        // تحديث نص العداد
+        timerElement.textContent = days + ':' + hours + ':' + minutes + ':' + seconds;
+      }
+    
+      setInterval(updateTimer, 1000);
+    </script>
+ <div class="pic">
+  <div class="picturetext"><img src="./h-about.jpg.webp" style="height: 450px;"></div> 
+  
+  <div><h2>About Conference</h2><p class="text1"> I first got into the online advertising business, I was looking for the magical combination that would put my website into the top search engine rankings, catapult me to the forefront of the minds or individuals looking to buy my product, and generally make me rich beyond my wildest dreams! After succeeding in the business for this long, I’m able to look back on my old self with this kind of thinking and shake my head.</p><br>
+      <li class="listmain"><span class="checkmark">&#x2713;</span>  Write On Your Business Card</li>
+      <li  class="listmain"><span class="checkmark">&#x2713;</span>Advertising Outdoors</li>
+      <li  class="listmain"><span class="checkmark">&#x2713;</span> Effective Advertising Pointers</li>
+      <li  class="listmain"><span class="checkmark">&#x2713;</span> Kook 2 Directory Add Url Free </li>
+  </div>
+ </div><br><br>
+ <h2 style="text-align: center;">Who’s speaking</h2>
+ <p style="text-align: center;">These are our communicators, you can see each person information</p><br>
+
+<div class="maincon">
+<div class="image-container">
+<img src="./2023-06-26 1.png" alt="صورة 1">
+<div class="image-name">Emma Sandoval</div>
+</div>
+
+<div class="image-container">
+<img src="./2023-06-26 2.png" alt="صورة 2">
+<div class="image-name">Emma Sandoval</div>
+</div>
+<div class="image-container">
+  <img src="./2023-06-26 3.png" alt="صورة 1">
+  <div class="image-name">Emma Sandoval</div>
+  </div>
+  
+  <div class="image-container">
+  <img src="./2023-06-26 4.png" alt="صورة 2">
+  <div class="image-name">Emma Sandoval</div>
+  </div><div class="image-container">
+    <img src="./2023-06-26 5.png" alt="صورة 1">
+    <div class="image-name">Emma Sandoval</div>
+    </div>
+    
+    <div class="image-container">
+    <img src="./2023-06-26 6.png" alt="صورة 2">
+    <div class="image-name">Emma Sandoval</div>
+    </div><div class="image-container">
+      <img src="./2023-06-26 7.png" alt="صورة 1">
+      <div class="image-name">Emma Sandoval</div>
+      </div>
+      
+      <div class="image-container">
+      <img src="./2023-06-26 8.png" alt="صورة 2">
+      <div class="image-name">Emma Sandoval</div>
+      
+    </div><div class="image-container">
+      <img src="./2023-06-26 9.png" alt="صورة 1">
+      <div class="image-name">Emma Sandoval</div>
+      </div>
+      
+      <div class="image-container">
+      <img src="./2023-06-26 10.png" alt="صورة 2">
+      <div class="image-name">Emma Sandoval</div>
+      </div>
+      
+    </div><br><br>
+    <h2 style="text-align: center;"><b> Our Schedule</b></h2>
+    <p style="text-align: center;">Do not miss anything topic about the event</p><br>
+    <div class="d-flex flex-row bd-highlight mb-3"style="justify-content:center;">
+      <div class="p-2 bd-highlight"><b>Day 1</b><br>Jul 04,2023</div>
+      <div class="p-2 bd-highlight"><b>Day 2</b><br>Jul 05,2023</div>
+      <div class="p-2 bd-highlight"><b>Day 3</b><br>Jul 06,2023</div>
+      <div class="p-2 bd-highlight"><b>Day 4</b><br>Jul 07,2023</div>
+      <div class="p-2 bd-highlight"><b>Day 5</b><br>Jul 08,2023</div>
+    </div>
+
+    <div class="card-grou">
+      <div class="card">
+        <img src="./2023-06-26 7.png" class="card-img-top"  alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Beyond The Naked Eye</h5>
+          <div class="time"><p class="card-text"><small class="text-muted"><i class="far fa-clock fa-sm" style="color: #FF4F4F;"><span style="color: #4c4c4c;">08:00 am - 10:00 AM</i> </span></i></small>
+            <p class="card-text"><small class="text-muted"><i class="fas fa-map-marker-alt fa-sm" style="color: #FF4F4F;"><span style="color: #4c4c4c;">59 Breanne Canyon Suite, USA</i> </span></i></small>
+        </div>
+         <div class="user"><i class="fas fa-user fa-sm" style="color: #FF4F4F;"><span style="color: #4c4c4c;"> John Smith</i> </span>
+         <i class="far fa-envelope fa-sm" style="color: #FF4F4F;"><span style="color: #4c4c4c;"> john@Colorlib.com</i> </span></i></div>
+
+        </div>
+      </div>
+      <div class="card">
+        <img src="./2023-06-26 2.png" class="card-img-top"  alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Beyond The Naked Eye</h5>
+          <div class="time"><p class="card-text"><small class="text-muted"><i class="far fa-clock fa-sm" style="color: #FF4F4F;"><span style="color: #4c4c4c;">08:00 am - 10:00 AM</i> </span></i></small>
+            <p class="card-text"><small class="text-muted"><i class="fas fa-map-marker-alt fa-sm" style="color: #FF4F4F;"><span style="color: #4c4c4c;">59 Breanne Canyon Suite, USA</i> </span></i></small>
+        </div>
+         <div class="user"><i class="fas fa-user fa-sm" style="color: #FF4F4F;"><span style="color: #4c4c4c;"> John Smith</i> </span>
+         <i class="far fa-envelope fa-sm" style="color: #FF4F4F;"><span style="color: #4c4c4c;"> john@Colorlib.com</i> </span></i></div>
+
+        </div>
+      </div>
+      <div class="card">
+        <img src="./2023-06-26 8.png" class="card-img-top"  alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Beyond The Naked Eye</h5>
+          <div class="time"><p class="card-text"><small class="text-muted"><i class="far fa-clock fa-sm" style="color: #FF4F4F;"><span style="color: #4c4c4c;">08:00 am - 10:00 AM</i> </span></i></small>
+            <p class="card-text"><small class="text-muted"><i class="fas fa-map-marker-alt fa-sm" style="color: #FF4F4F;"><span style="color: #4c4c4c;">59 Breanne Canyon Suite, USA</i> </span></i></small>
+        </div>
+         <div class="user"><i class="fas fa-user fa-sm" style="color: #FF4F4F;"><span style="color: #4c4c4c;"> John Smith</i> </span>
+         <i class="far fa-envelope fa-sm" style="color: #FF4F4F;"><span style="color: #4c4c4c;"> john@Colorlib.com</i> </span></i></div>
+
+        </div>
+      </div>
+      <div class="card">
+        <img src="./2023-06-26 4.png" class="card-img-top"  alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Beyond The Naked Eye</h5>
+          <div class="time"><p class="card-text"><small class="text-muted"><i class="far fa-clock fa-sm" style="color: #FF4F4F;"><span style="color: #4c4c4c;">08:00 am - 10:00 AM</i> </span></i></small>
+            <p class="card-text"><small class="text-muted"><i class="fas fa-map-marker-alt fa-sm" style="color: #FF4F4F;"><span style="color: #4c4c4c;">59 Breanne Canyon Suite, USA</i> </span></i></small>
+        </div>
+         <div class="user"><i class="fas fa-user fa-sm" style="color: #FF4F4F;"><span style="color: #4c4c4c;"> John Smith</i> </span>
+         <i class="far fa-envelope fa-sm" style="color: #FF4F4F;"><span style="color: #4c4c4c;"> john@Colorlib.com</i> </span></i></div>
+
+        </div>
+      </div>
+    </div>
+    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+      <h1 class="display-4 fw-normal" style="color: #fff;">Ticket Pricing</h1>
+      <p class="fs-5 text-muted" style="color: #fff;">Get your event ticket plan</p>
+    
+    <div class="row justify-content-center " style="width: 85%; margin-left: 10%;">
+      <div class="col-lg-4 col-md-8">
+      <div class="price-item">
+      <h4>1 Day Pass</h4>
+      <div class="pi-price">
+      <h2><span>$</span>129</h2>
+      </div>
+      <ul>
+      <li>One Day Conference Ticket</li>
+      <li>Coffee-break</li>
+      <li>Lunch and Networking</li>
+      <li>Keynote talk</li>
+      <li>Talk to the Editors Session</li>
+      </ul>
+      <a href="#" class="price-btn">Get Ticket <span class="arrow_right"></span></a>
+      </div>
+      </div>
+      <div class="col-lg-4 col-md-8">
+      <div class="price-item top-rated">
+      <div class="tr-tag">
+      <i class="fa fa-star"></i>
+      </div>
+      <h4>Full Pass</h4>
+      <div class="pi-price">
+      <h2><span>$</span>199</h2>
+      </div>
+      <ul>
+      <li>One Day Conference Ticket</li>
+      <li>Coffee-break</li>
+      <li>Lunch and Networking</li>
+      <li>Keynote talk</li>
+      <li>Talk to the Editors Session</li>
+      <li>Lunch and Networking</li>
+      <li>Keynote talk</li>
+      </ul>
+      <a href="#" class="price-btn">Get Ticket <span class="arrow_right"></span></a>
+      </div>
+      </div>
+      <div class="col-lg-4 col-md-8">
+      <div class="price-item">
+      <h4>Group Pass</h4>
+      <div class="pi-price">
+      <h2><span>$</span>79</h2>
+      </div>
+      <ul>
+      <li>One Day Conference Ticket</li>
+      <li>Coffee-break</li>
+      <li>Lunch and Networking</li>
+      <li>Keynote talk</li>
+      <li>Talk to the Editors Session</li>
+      </ul>
+      <a href="#" class="price-btn">Get Ticket <span class="arrow_right"></span></a>
+      </div>
+      </div>
+      </div>
+    </div><br>
+    <div class="wrapper">
+      <div class="card bg-dark text-white" style=" grid-column: 1;
+      grid-row: 1/span 2; ">
+        <img src="./2023-06-26 8.png" class="card-img" alt="...">
+        <div class="card-img-overlay">
+          <h6 class="card-title1">Markiting</h6>
+          <p class="card-text">Improve You Business Cards And Enchan Your Sales</p>
+          <p class="card-text"><p class="card-text"><small class="text-muted"><i class="far fa-clock fa-sm" style="color: #FF4F4F;"><span style="color: #fdfbfb;">19th May, 2019</i> </span></i></small></p>
+        </div>
+      </div>
+   <div class="card bg-dark text-white">
+        <img src="./images (1).jpeg" class="card-img" alt="..." style="height: 250px;">
+        <div class="card-img-overlay">
+          <h6 class="card-title1">Experience</h6>
+          <p class="card-text">All users on MySpace will know that there are millions of people out there.</p>
+          <p class="card-text"><p class="card-text"><small class="text-muted"><i class="far fa-clock fa-sm" style="color: #FF4F4F;"><span style="color: #faf6f6;">19th May, 2019</i> </span></i></small></p>
+        </div>
+      </div>
+     <div class="card bg-dark text-white">
+        <img src="./IMG-20221203-WA0154.jpg" class="card-img" alt="..."  style="height: 250px;">
+        <div class="card-img-overlay">
+          <h6 class="card-title1">Markiting</h6>
+          <p class="card-text">A Pocket PC is a handheld computer, which features many of the same capabilities.</p>
+          <p class="card-text"><p class="card-text"><small class="text-muted"><i class="far fa-clock fa-sm" style="color: #FF4F4F;"><span style="color: #fdfcfc;">19th May, 2019</i> </span></i></small></p>
+        </div>
+      </div>
+    </div>
+    <div class="newslatter-inner set-bg" style="padding: 2%;">
+      <div class="ni-text">
+      <h3>Subscribe Newsletter</h3>
+      <p>Subscribe to our newsletter and don’t miss anything</p>
+      </div>
+      <form action="#" class="ni-form">
+      <input type="text" placeholder="Your email">
+      <button type="submit" style="background: linear-gradient(45deg , #FF6B6b , orange);"  class = "rounded-pill"> Subscribe </button>
+      </form>
+      </div><br>
+      <div class=" maptext" style="display: flex; margin-left: 15%; width: 55%;" >
+
+        <div class="map1"><h6>Location</h6><br>
+          Get directions to our event center<br>
+          
+          Address:<br>
+          01 Pascale Springs Apt. 339, NY City
+          United State<br><br>
+          
+          Phone:
+          (+12)-345-67-8910 <br><br>
+          Email:
+          info.colorlib@gmail.com<br><br>
+          Website:
+          https://conference.colorlib.com </div>
+      <div class="map1">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d433871.3814125367!2d35.617977761214966!3d31.835335369200244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151b5fb85d7981af%3A0x631c30c0f8dc65e8!2sAmman!5e0!3m2!1sen!2sjo!4v1688217020501!5m2!1sen!2sjo" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"</div></div>
+  </body>    
+</html>
