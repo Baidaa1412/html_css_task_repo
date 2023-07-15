@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+15
+Create a function called removeFromArray
+that accept an array and elemnt to remove
+and return the array after remove this elemnt from it
+
+var nums= [1,2,3,8,9]
+Ex: minInArray(nums,8) => [1,2,3,9]
+
+** solve it one time using for loop and another using while loop
+**try more cases by your self
+*/
+
+function removeFromArray(arr, element) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === element) {
+      arr.splice(i, 1);
+      i--;
+    }
+  }
+  return arr;
+}
+
+var nums= [1,2,3,8,9]
+console.log(removeFromArray(nums,));
+
+    </script>
+</body>
+</html>

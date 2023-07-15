@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+17
+Create a function called aveArray
+that accept an array
+and return the average of the numbers inside this array
+
+var nums= [1,2,3,8,9]
+Ex: aveArray(nums) => 4.6
+
+var nums2= [1,2,3,8,9,77]
+Ex: aveArray(nums) => 16.6
+
+** solve it one time using for loop and another using while loop
+**try more cases by your self
+*/
+
+
+function aveArray(arr){
+    let average=0;
+    let sum=0;
+for (let i=0; i<arr.length;i++){
+
+ sum+=arr[i];
+ average=sum/arr.length;
+}
+return average;
+
+}
+
+
+var nums= [1,2,3,8,9]
+console.log (aveArray(nums));
+var nums=[1,2,3,8,9,77]
+console.log (aveArray(nums));
+
+function aveArray1(arr){
+    let average=0;
+    let sum=0;
+    let i=0;
+while (i<arr.length){
+i
+ sum+=arr[i];
+ average=sum/arr.length;
+ i++;
+}
+return average;
+}
+var nums= [1,2,3,8,9]
+console.log (aveArray1(nums));
+var nums=[1,2,3,8,9,77]
+console.log (aveArray1(nums));
+
+    </script> 
+</body>
+</html>

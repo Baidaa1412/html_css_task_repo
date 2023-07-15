@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+/*
+13
+Write a function called shorterString
+that accept five string as an arguments,
+and return the first shorter string
+
+Ex: shorterString("air","school","car","by","github")
+=> by
+
+Ex: shorterString("air","tr","car","by","github")
+=> tr
+
+Ex: shorterString("by","tr","car","air","github")
+=> by
+
+Ex: shorterString("air","by","car","school","github")
+=> by
+
+Ex: shorterString("air","tr","by","car","github")
+=> by
+
+Ex: shorterString("air","tr","car","github","by")
+=> by
+
+*/
+
+function shorterString(str1, str2, str3, str4, str5) {
+  var shortest = str1;
+
+  if (str2.length < shortest.length) {
+    shortest = str2;
+  }
+  if (str3.length < shortest.length) {
+    shortest = str3;
+  }
+  if (str4.length < shortest.length) {
+    shortest = str4;
+  }
+  if (str5.length < shortest.length) {
+    shortest = str5;
+  }
+
+  return shortest;
+}
+
+console.log(shorterString("air","school","car","by","github"))
+
+
+console.log(shorterString("air","tr","car","by","github"))
+
+
+Ex: shorterString("by","tr","car","air","github")
+
+Ex: shorterString("air","by","car","school","github")
+
+
+Ex: shorterString("air","tr","by","car","github")
+
+
+Ex: shorterString("air","tr","car","github","by")
+
+    </script>
+</body>
+</html>

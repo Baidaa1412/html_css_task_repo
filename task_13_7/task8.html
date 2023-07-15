@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+8
+Create a function called middleOfArray
+that take an array as a parameter
+and return the middle element in an array if it is have an odd elemnets
+and return the two middle elemnt in an array if it is have an even elemnets
+
+Ex: middleOfArray([1,4,5]) => 4
+Ex: middleOfArray(["t","u","g","x"]) =>"u and g"
+*/
+
+function middleOfArray(arr)
+{ const length=arr.length;
+
+let middle=Math.floor(length/2)// نقوم بقسمة طول المصفوفة على 2 ونقربها لاقل قيمة حتى تعطينا موقعها الصحيح 
+
+    if(length%2!=0){
+      return arr[middle];
+    }
+  else (length%2==0)
+    {
+        return [arr[middle],arr[middle-1]]; //نرجع قيمة القسمة والاقل منها مثلا طول المصفوفة 4 عند قسمتها على 2 تعطينا 2 اي العنصر الثالث وعند طرح 1 منها تعطينا العنصر الثاني وهو منتصف المصفوفة 4
+    }
+}
+console.log(middleOfArray([1,4,5]));
+console.log( middleOfArray(["t","u","g","x"]));
+    </script>
+</body>
+</html>

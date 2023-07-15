@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+/*
+14
+Create a function called minInArray
+that accept an array
+and return the minimum value inside this array
+
+var nums= [1,2,3,8,9]
+Ex: minInArray(nums) => 1
+
+** solve it one time using for loop and another using while loop
+**try more cases by your self
+*/
+
+function minInArray(arr) {
+
+  let min = arr[0]; // Assume the first element as the initial minimum
+
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] < min) {
+      min = arr[i]; // Update the minimum if a smaller value is found
+    }
+  }
+
+  return min;
+}
+
+var nums = [1, 2, 3, 8, 9];
+console.log(minInArray(nums)); // Output: 1
+
+function minInArray(arr) {
+  
+  let min = arr[0]; // Assume the first element as the initial minimum
+
+  for (let i = 1; i < arr.length; i++) {
+    min = Math.min(min, arr[i]); // Update the minimum using Math.min()
+  }
+
+  return min;
+}
+
+var nums = [1, 2, 3, 8, 9];
+console.log(minInArray(nums)); // Output: 1
+
+function minn(arr) {
+  return Math.min(...arr);
+}
+
+var num = [1, 8, 9, -80, 5];
+var minValue = minn(num);
+console.log(minValue);
+
+
+    </script>
+</body>
+</html>

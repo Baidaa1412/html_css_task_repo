@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+/*
+18
+Create a function called shorterInArray
+that accept an array of strings
+and return the shortest string inside this array (first)
+
+var strings= ["alex","mercer","madrasa","rashed2","emad","hala"]
+Ex: shorterInArray(strings) => "alex"
+
+** solve it one time using for loop and another using while loop
+**try more cases by your self
+*/
+
+function shorterInArray(arr) {
+  let shortestString = arr[0];
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i].length < shortestString.length) {
+      shortestString = arr[i];
+    }
+  }
+  return shortestString;
+}
+var strings = ["alex", "mercer", "madrasa", "rashed2", "emad", "hala"];
+var result = shorterInArray(strings);
+console.log(result);
+
+
+    </script>
+</body>
+</html>

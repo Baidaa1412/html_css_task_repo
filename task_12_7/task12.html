@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+/*
+12
+Write a function called smallerNubmer
+that accept three numbers as arguments,
+and return the first smaller number
+
+Ex: smallerNubmer(8,6,7)
+=> 6
+
+Ex: smallerNubmer(5,99,34)
+=> 5
+
+Ex: smallerNubmer(5,99,3)
+=> 3
+
+Ex: smallerNubmer(5,3,3)
+=> 3
+
+*/
+
+function smallerNubmer (x,y,z)
+{
+
+    if(x<z&&x<y){
+   return console.log(x);
+    }
+
+    else if(y<x&&y<z){
+
+        return console.log(y);
+    }
+    else{
+        return console.log(z);
+    }
+}
+console.log(smallerNubmer(8,6,7))
+console.log(smallerNubmer(5,99,34))
+console.log(smallerNubmer(5,99,3))
+console.log(smallerNubmer(5,3,3))
+
+    </script>
+</body>
+</html>
