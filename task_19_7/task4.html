@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Write a JavaScript program to remove specified elements from the right of a given array of elements. 
+
+        function removeElementsfromright(arr,num){
+        arr.splice(-2,num);
+        return arr
+        }
+        var inputArray = [1, 2, 3, 4, 5, 6];
+var elementsToRemove = 2;
+var resultArray = removeElementsfromright(inputArray, elementsToRemove);
+console.log(resultArray);
+    </script>
+</body>
+</html>

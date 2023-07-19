@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+
+/*
+* Exercise 2:
+* Write a function called onlyEvenValues which accepts an array and returns a new array with only the even values in the array passed to the function
+*
+* Test Cases:
+*   onlyEvenValues([1,2,3]) 
+*   onlyEvenValues([5,1,2,3,10]) 
+* 
+* Result:
+*  Test Case 1:  [2]
+*  Test Case 2: [2,10]
+*/
+function onlyEvenValues(arr){
+  arr.forEach(element => {
+    if(element%2==0){
+        console.log(element);
+    }
+  });
+    
+}
+ console.log(onlyEvenValues([1,2,3]) );
+ console.log(onlyEvenValues([5,1,2,3,10]) );
+    </script>
+</body>
+</html>

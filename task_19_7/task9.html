@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><h1>
+    Write a JavaScript program to get a random integer in the specified range. 
+</h1>
+    <script>
+function randomnum(min, max) {
+  var randomNum = Math.random() * (max - min + 1)+min;
+  return Math.floor(randomNum);
+}
+console.log(randomnum(10, 15));
+
+    </script>
+</body>
+</html>

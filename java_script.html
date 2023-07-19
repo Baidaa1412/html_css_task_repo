@@ -5,16 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-      body{background-color: rgb(240, 240, 192);}
+      body{background-color: black;
+      color: beige;}
          
         .bordered {
           border: 1px solid black;
           padding: 10px;
-       
+         display: grid;
+         grid-template-columns: 1fr 1fr ;
         }
-        .gr{
-          display: grid;
-          grid-template-columns: 1fr 1fr ;
+        a{
+          color: beige;
+          font-size: larger;
+        }
+        a:hover{
+          color: yellow;
+        }
+        h2{
+          color:rgb(63, 63, 62);
+          background-color: white;
+          width: 45%;
+        }
+     
+        img{
+          position: fixed;
+          margin-left: 50%;
         }
         @media only screen and (max-width: 896px)
         {}
@@ -22,8 +37,10 @@
       </style>
 </head>
 <body>
-    <div class="bordered"><h1>JS Task</h1><hr>
+    <div class="bordered">
+      <h1>JS Task</h1><br>
 
+   <div class="ok">
    <DL> <dt>  <h2> Task 9/7</h2></dt>
     <dd> <a href="./task_9_7/task1.html">Task 1</a><br></dd>
     <dd> <a href="./task_9_7/task2.html">Task 2</a><br></dd>
@@ -34,7 +51,7 @@
 
        <DL> <dt>  <h2> Task 11/7</h2></dt>
           <dd> <a href="./task_10_7/task1.html">Task 1</a><br></dd></DL>
-          <DL> <dt>  <h2> Task 12/7</h2></dt>
+          <DL> <dt>  <h2> Task 12/7 (function)</h2></dt>
             <dd> <a href="./task_12_7/task1.html">Task 1</a><br></dd>
             <dd> <a href="./task_12_7/task2.html">Task 2</a><br></dd>
             <dd> <a href="./task_12_7/task3.html">Task 3</a><br></dd>
@@ -62,7 +79,7 @@
              <dd> <a href="./task_12_7/task22.html">Task 22</a><br></dd>
             <dd> <a href="./task_12_7/task23.html">Task 23</a><br></dd>
             <dd> <a href="./task_12_7/task24.html">Task 24</a><br></dd>
-            <DL> <dt>  <h2> Task 13/7</h2></dt>
+            <DL> <dt>  <h2> Task 13/7 (Array)</h2></dt>
               <dd> <a href="./task_13_7/task1.html">Task 1</a><br></dd>
               <dd> <a href="./task_13_7//task2.html">Task 2</a><br></dd>
               <dd> <a href="./task_13_7//task3.html">Task 3</a><br></dd>
@@ -89,13 +106,13 @@
               <dd> <a href="./task_13_7//task21.html">Task 21</a><br></dd> 
                <dd> <a href="./task_13_7//task22.html">Task 22</a><br></dd>
 
-               <DL> <dt>  <h2> Task 15/7</h2></dt>
+               <DL> <dt>  <h2> Task 15/7 (dom)</h2></dt>
                 <dd> <a href="./task_15_7/task1.html">Task 1</a><br></dd>
                 <dd> <a href="./task_15_7/task2.html">Task 2</a><br></dd>
                 <dd> <a href="./task_15_7/task3.html">Task 3</a><br></dd>
                 <dd> <a href="./task_15_7/task4.html">Task 4</a><br></dd>
                 <dd> <a href="./task_15_7/task5.html">Task 5</a><br></dd>
-                <DL> <dt>  <h2> Task 16/7</h2></dt>
+                <DL> <dt>  <h2> Task 16/7 (map method)</h2></dt>
                   <dd> <a href="./task_16_7/task1.html">Task 1</a><br></dd>
                   <dd> <a href="./task_16_7/task2.html">Task 2</a><br></dd>
                   <dd> <a href="./task_16_7/task3.html">Task 3</a><br></dd>
@@ -106,8 +123,25 @@
                   <dd> <a href="./task_16_7/task8.html">Task 8</a><br></dd>
                   <dd> <a href="./task_16_7/task9.html">Task 9</a><br></dd>
                   <dd> <a href="./task_16_7/task10.html">Task 10</a><br></dd>
-
-
+                  <DL> <dt>  <h2> Task 17/7 forEach</h2></dt>
+                    <dd> <a href="./task_17_7/task1.html">Task 1</a><br></dd>
+                    <dd> <a href="./task_17_7/task2.html">Task 2</a><br></dd>
+                    <dd> <a href="./task_17_7/task3.html">Task 3</a><br></dd>
+                    <dd> <a href="./task_17_7/task4.html">Task 4</a><br></dd>
+                    <dd> <a href="./task_17_7/task5.html">Task 5</a><br></dd>
+                    <DL> <dt>  <h2> Task 18/7 ES6</h2></dt>
+                      <dd> <a href="./task_18_7/task1.html">Task 1</a><br></dd>
+                      <dd> <a href="./task_18_7/task2.html">Task 2</a><br></dd>
+                      <dd> <a href="./task_18_7/task3.html">Task 3</a><br></dd>
+                      <dd> <a href="./task_18_7/task4.html">Task 4</a><br></dd>
+                      <dd> <a href="./task_18_7/task5.html">Task 5</a><br></dd>
+                      <dd> <a href="./task_18_7/task6.html">Task 6</a><br></dd>
+                      <dd> <a href="./task_18_7/task7.html">Task 7</a><br></dd>
+                      <dd> <a href="./task_18_7/task8.html">Task 8</a><br></dd>
+                      <dd> <a href="./task_18_7/task9.html">Task 9</a><br></dd>
+                      <dd> <a href="./task_18_7/task10.html">Task 10</a><br></dd>
+                    </div>
+                    <img src="./giphy.gif">
 </DL></div>
 </body>
 </html>

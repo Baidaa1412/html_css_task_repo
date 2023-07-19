@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            padding: 15%;
+           
+        }
+        input{
+            border: 1px solid black;
+            padding: 5px;
+
+        }
+        .btn{
+            position: relative;
+        }
+        .btn >span{
+            position: absolute;
+            background-color: aliceblue;
+            text-align: center;
+            font-size: 14px;
+            transform: translateY(-10px);
+            transition: 300ms;
+            width: 120px;
+            opacity: 0%;
+            margin: -55%;
+        }
+        .btn:hover > span{
+            opacity: 1;
+            transform: none;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" id="input" value="https://gogle.com">
+    <div class="btn">
+        <span id ="message">copy to url</span>
+        <button id="button" onclick="copytext()"> copy text</button>
+    </div>
+    <script>
+function copytext(){
+var input=document.getElementById('input')
+var message=document.getElementById('message');
+input.select();
+navigator.clipboard.writeText(input.value);
+ } </script>
+</body>
+</html> 

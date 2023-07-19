@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><h1> Write a JavaScript program to dcapitalize the first letter of a string. </h1>
+    <script>
+ function dcapitalize(str) {
+  var firstLetter = str.substring(0, 1);
+  var remainingLetters = str.substring(1);
+  var decapitalizedStr = firstLetter.toLowerCase() + remainingLetters;
+  return decapitalizedStr;
+}
+
+console.log(dcapitalize("Abcdef"));
+
+console.log( dcapitalize("Baidaa"));
+
+    </script>
+</body>
+</html>
