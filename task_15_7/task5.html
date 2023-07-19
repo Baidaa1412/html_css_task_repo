@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        
+    <select id="changeflag" onchange="chgflag()" style="display: block;">
+        <option>none</option>
+       <option value="https://cdn.abicart.com/shop/19667/art67/h1270/144781270-origpic-924f3e.jpg">JORDAN</option>
+       <option value="https://upload.wikimedia.org/wikipedia/en/thumb/0/03/Flag_of_Italy.svg/1280px-Flag_of_Italy.svg.png">Italy</option>
+    </select>
+    <img id="imgToChange" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/65/No-Image-Placeholder.svg/1665px-No-Image-Placeholder.svg.png" alt="" width="400px" height="400px">
+
+  
+    <script>
+     function chgflag(){
+    let data=document.getElementById("changeflag").value;
+    document.getElementById("imgToChange").src=data;
+
+
+}
+    </script>
+</body>
+</html>

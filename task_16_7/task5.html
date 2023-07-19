@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+ /*        
+ * Make an array of strings of the names saying whether or not they can go to The Matrix
+ *
+ * Test Case: 
+ *
+ * console.log(makeStrings([
+ *    {
+ *       name: "Angelina Jolie",
+ *       age: 80
+ *   },
+ *   {
+ *       name: "Eric Jones",
+ *       age: 2
+ *   },
+ *   {
+ *       name: "Paris Hilton",
+ *       age: 5
+ *   },
+ *   {
+ *       name: "Kayne West",
+ *       age: 16
+ *   },
+ *   {
+ *       name: "Bob Ziroll",
+ *       age: 100
+ *   }
+ * ]));  
+ * 
+ * Result:
+ * 
+ * ["Angelina Jolie can go to The Matrix", 
+ * "Eric Jones is under age!!", 
+ * "Paris Hilton is under age!!", 
+ * "Kayne West is under age!!", 
+ * "Bob Ziroll can go to The Matrix"]
+ *  ["John", "Jacob", "Jingleheimer", "Schmidt"]
+ */
+
+
+
+ function namesOnly(arr) {
+  return arr.map(function(person) {
+    if(person.age>=18){
+ console.log(person.name+" can go to The Matrix");
+
+    }
+    else{
+        console.log(person.name+"is under age!!");
+    }
+  });
+}
+
+(namesOnly([
+  {
+    name: "Angelina Jolie",
+    age: 80
+  },
+  {
+    name: "Eric Jones",
+    age: 2
+  },
+  {
+    name: "Paris Hilton",
+    age: 5
+  },
+  {
+    name: "Kayne West",
+    age: 16
+  },
+  {
+    name: "Bob Ziroll",
+    age: 100
+  }
+]));
+    </script>
+</body>
+</html>

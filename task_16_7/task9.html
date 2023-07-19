@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         /*
+  * Exercise 9:
+  * Write a function called extractKey which accepts an array of objects and some key and returns a new array with the value
+  * of that key in each object.
+  * 
+  * Test Case:
+  * extractKey([{name: 'Elie'}, {name: 'Tim'}, {name: 'Matt'}, {name: 'Colt'}], 'name') 
+  * 
+  * Result:
+  * ['Elie', 'Tim', 'Matt', 'Colt']
+  */
+  
+  function extractKey(object) {
+  var newArray = object.map(function(person) {
+    return person.name;
+  });
+  return newArray;
+}
+
+  
+  console.log(extractKey([{name: 'Elie'}, {name: 'Tim'}, {name: 'Matt'}, {name: 'Colt'}], 'name') );
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+         /*
+  * Exercise 8:
+  * Write a function called valTimesIndex which accepts an array and returns a new array with each value multiplied by the index it is currently at in the array.
+  *
+  *
+  * Test Cases :
+  *   Test Case 1:  valTimesIndex([1,2,3])  
+  *   Test Case 2:  valTimesIndex([1,-2,-3]) 
+  * 
+  * Result
+  * Test Case 1: [0,2,6]
+  * Test Case 2: [0,-2,-6]
+  */
+  function doubleValues(arr){
+  var array= arr.map(function(valu,index){
+    return valu*index;
+   });
+   return array;
+  }
+  console.log(doubleValues([1, 2, 3]));
+  console.log(doubleValues([1,-2,-3]));
+
+    </script>
+</body>
+</html>

@@ -7,19 +7,37 @@
   <link rel="stylesheet" href="style.css" ></a>
 </head>
 <body>
-    <div id="lore">
-        <p id="qustion">
-            Whats lorem ipsum 
-        </p>
-        <a href="aaa">show
-        </a>
+  <div id="lore">
+    <h2>whats lorem ipsum ?</h2>
+ 
+    <button id="showButton" style="border: none; background-color: rgb(198, 200, 200); text-decoration-line: underline;">
+  Shwo 
+    </button></div>
+  <div id="text" style="width: 25%; border: 1px black solid;">
+    <h2 style="background-color: rgb(198, 200, 200);">why do we use it?</h2>
+  <p id="textBox">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus dolorum iste nesciunt, aspernatur similique inventore vel hic assumenda commodi consectetur nostrum explicabo odio cupiditate voluptates porro corrupti beatae dignissimos saepe. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima blanditiis doloribus quam non! Inventore modi porro, dignissimos magni sint culpa molestias maxime placeat blanditiis recusandae odio et? Nesciunt, alias error.</p>
+
+  
+  <button id="hideButton"style="border: none; background-color:white; text-decoration-line: underline;">Hide</button>
+  
     </div>
   <script>
-    
-var lore = document.getElementById("lore");
+ var lore =document.getElementById("lore");
+ lore.style.border="black 1px solid";
+lore.style.backgroundColor="rgb(198, 200, 200)"
+lore.style.width="25%";
+lore.style.display="flex"
+const textBox = document.getElementById('textBox');
+const showButton = document.getElementById('showButton');
+const hideButton = document.getElementById('hideButton');
 
-lore.style.display="flex";
-lore.style.border="solid black 1px";
+showButton.addEventListener('click', function() {
+  textBox.style.display = '';
+});
+
+hideButton.addEventListener('click', function() {
+  textBox.style.display = 'none';
+});
 
 
   </script>

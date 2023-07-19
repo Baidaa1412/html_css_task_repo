@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+/*
+* Exercise 7:
+* Write a function called doubleValues which accepts an array and returns a new array with all the values in the array passed to the function doubled
+*
+* Test Cases:
+*   Test Case 1:  doubleValues([1,2,3]) 
+*   Test Case 2:  doubleValues([1,-2,-3])  
+*
+* Result:
+* Test Case 1: [2,4,6] 
+* Test Case 2: [2,-4,-6]
+*/
+
+// Test Case 1
+function doubleValues(arr){
+  var array= arr.map(function(valu){
+    return valu*2;
+   });
+   return array;
+  }
+  console.log(doubleValues([1, 2, 3]));
+  console.log(doubleValues([1,-2,-3]));
+
+
+    </script>
+</body>
+</html>

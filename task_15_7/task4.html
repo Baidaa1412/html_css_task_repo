@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <select id="fontSelect">
+        <option value="Arial, Helvetica, sans-serif">Default Font</option>
+        <option value="Times New Roman, Times, serif">Times New Roman</option>
+        <option value="Verdana, Geneva, sans-serif">Verdana</option>
+        <option value="Courier New, Courier, monospace">Courier New</option>
+      </select>
+   
+      
+
+<select id="fontsize"> <option value="12px">12</option>
+    <option value="14px">14</option>
+    <option value="16px">16</option></select>
+
+
+<label><input type="checkbox" id ="bold" >Bold </label>
+<label><input type="checkbox"id ="itl">Italic </label>
+<label><input type="checkbox" id="un"> underline</label><br>
+<input type="text" id="textBox" value="write here">
+    <script>
+
+const fontSelect = document.getElementById('fontSelect');
+const textBox = document.getElementById('textBox');
+
+fontSelect.addEventListener('change', function() {
+  const selectedFont = fontSelect.value;
+  textBox.style.fontFamily = selectedFont;
+});
+const fontsize=document.getElementById("fontsize");
+fontsize.addEventListener('change',function(){
+    const selectedsize=fontsize.value;
+    textBox.style.fontSize = selectedsize;
+}
+)
+let bold=document.getElementById("bold");
+bold.addEventListener('change',function(){
+    if (bold.checked==true){
+        textBox.style.fontWeight="bold";
+    }
+})
+let Italic=document.getElementById("itl")
+Italic.addEventListener('change',function(){
+    if (Italic.checked==true){
+        textBox.style.fontStyle="italic"
+    }
+})
+let underline=document.getElementById("un")
+un.addEventListener('change',function(){
+    if(underline.checked==true){
+        textBox.style.textDecoration="underline";
+    }
+})
+    </script>
+</body>
+</html>
